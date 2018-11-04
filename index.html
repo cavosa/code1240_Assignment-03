@@ -20,12 +20,20 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		
+		<!-- Image Grabber -->
+		<style type = "text/css">
+		.contain{
+			background-size: contain !important;
+		}
+		
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
 				<section>Slide 1</section>
 				<section>Slide 2</section>
+				<section class = "contain" data-background = ""></section>
 			</div>
 		</div>
 
